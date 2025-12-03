@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>OLDMYN — Under Construction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="OLDMYN — Something massive is being built. A hyper‑cinematic construction site for the next era of premium streetwear."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Space+Grotesk:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- GSAP for cinematic motion -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      defer
+    ></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="page-chrome">
+      <header class="nav">
+        <div class="nav__brand">
+          <span class="nav__brand-text">OLDMYN - Wear Your Own</span>
+        </div>
+        <div class="nav__meta">
+          <span class="nav__status-badge">
+            <span class="dot"></span> SITE UNDER HEAVY CONSTRUCTION
+          </span>
+          <span class="nav__coords">SECTOR 07 • GRID 3A • LIVE ZONE</span>
+        </div>
+      </header>
+
+      <main class="site">
+        <!-- HERO: Massive construction pit -->
+        <section class="hero" id="top">
+          <div class="hero__gradient"></div>
+          <div class="hero__fog hero__fog--left"></div>
+          <div class="hero__fog hero__fog--right"></div>
+
+          <div
+            class="scene"
+            aria-label="OLDMYN construction site visual"
+          >
+            <!-- Background skyline -->
+            <div class="layer layer--skyline" data-depth="0.1">
+              <div class="skyline">
+                <div class="skyline__glow"></div>
+                <div class="skyline__tower skyline__tower--left"></div>
+                <div class="skyline__tower skyline__tower--center"></div>
+                <div class="skyline__tower skyline__tower--right"></div>
+                <div class="skyline__banners skyline__banners--left">
+                  <span>OLDMYN</span>
+                  <span>CAUTION</span>
+                </div>
+                <div class="skyline__banners skyline__banners--right">
+                  <span>OVERSIZED</span>
+                  <span>DROPPING SOON</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Mid cranes & drones -->
+            <div class="layer layer--mid" data-depth="0.25">
+              <div class="crane crane--left">
+                <div class="crane__arm crane__arm--swing">
+                  <div class="crane__hook">
+                    <div class="crane__cable"></div>
+                    <div class="crane__load crane__load--rack">
+                      <span class="crane__label">RACK 04</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="crane__base"></div>
+              </div>
+
+              <div class="crane crane--right">
+                <div class="crane__arm crane__arm--lift">
+                  <div class="crane__hook">
+                    <div class="crane__cable"></div>
+                    <div class="crane__load crane__load--logo">
+                      <!-- Suspended OLDMYN plate -->
+                      <span>OLDMYN</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="crane__base"></div>
+              </div>
+
+              <div class="drone drone--scanner">
+                <div class="drone__body"></div>
+                <div class="drone__rotor drone__rotor--tl"></div>
+                <div class="drone__rotor drone__rotor--tr"></div>
+                <div class="drone__rotor drone__rotor--bl"></div>
+                <div class="drone__rotor drone__rotor--br"></div>
+                <div class="drone__beam"></div>
+                <div class="drone__hologram">
+                  <span>AW25</span>
+                  <span>OVERSIZED TEE</span>
+                  <span class="diagram-lines"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Foreground site + workers -->
+            <div class="layer layer--fg" data-depth="0.45">
+              <div class="pit">
+                <!-- Giant OLDMYN logo being welded -->
+                <div class="logo-rig">
+                  <svg
+                    class="logo-rig__frame"
+                    viewBox="0 0 600 200"
+                    preserveAspectRatio="xMidYMid meet"
+                  >
+                    <defs>
+                      <linearGradient
+                        id="logoMetal"
+                        x1="0%"
+                        y1="0%"
+                        x2="100%"
+                        y2="0%"
+                      >
+                        <stop offset="0%" stop-color="#f5eedf" />
+                        <stop offset="50%" stop-color="#f6c90e" />
+                        <stop offset="100%" stop-color="#ffffff" />
+                      </linearGradient>
+                    </defs>
+                    <rect
+                      x="10"
+                      y="10"
+                      width="580"
+                      height="180"
+                      rx="24"
+                      ry="24"
+                      fill="none"
+                      stroke="url(#logoMetal)"
+                      stroke-width="6"
+                      stroke-dasharray="18 14"
+                    />
+                    <text
+                      x="50%"
+                      y="52%"
+                      text-anchor="middle"
+                      class="logo-rig__text"
+                    >
+                      OLDMYN
+                    </text>
+                  </svg>
+                  <div class="logo-rig__supports"></div>
+                  <div class="welder welder--left">
+                    <div class="welder__torch"></div>
+                    <div class="welder__sparks welder__sparks--left"></div>
+                  </div>
+                  <div class="welder welder--right">
+                    <div class="welder__torch"></div>
+                    <div class="welder__sparks welder__sparks--right"></div>
+                  </div>
+                  <div class="logo-rig__dust"></div>
+                </div>
+
+                <!-- JCB machine -->
+                <div class="jcb">
+                  <div class="jcb__body">
+                    <div class="jcb__cabin"></div>
+                    <div class="jcb__window"></div>
+                    <div class="jcb__stripe"></div>
+                  </div>
+                  <div class="jcb__arm">
+                    <div class="jcb__joint jcb__joint--1"></div>
+                    <div class="jcb__joint jcb__joint--2"></div>
+                    <div class="jcb__claw"></div>
+                  </div>
+                  <div class="jcb__tracks">
+                    <span></span><span></span><span></span><span></span>
+                  </div>
+                </div>
+
+                <!-- Foreground workers -->
+                <div class="workers">
+                  <div class="worker worker--tee">
+                    <div class="worker__body"></div>
+                    <div class="worker__helmet"></div>
+                    <div class="worker__tee-panel">
+                      <span>OVERSIZED</span>
+                    </div>
+                  </div>
+
+                  <div class="worker worker--sneak">
+                    <div class="worker__body"></div>
+                    <div class="worker__helmet worker__helmet--tilt"></div>
+                    <div class="worker__tee-on">
+                      <span>OLDMYN</span>
+                    </div>
+                    <div class="worker__speech-bubble">
+                      <span>Wear Your Own</span>
+                    </div>
+                  </div>
+
+                  <div class="truck">
+                    <div class="truck__cab"></div>
+                    <div class="truck__container">
+                      <span>FABRIC</span>
+                    </div>
+                    <div class="truck__wheel truck__wheel--front"></div>
+                    <div class="truck__wheel truck__wheel--back"></div>
+                    <div class="truck__dump"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Ambient elements -->
+            <div class="layer layer--particles" data-depth="0.7">
+              <div class="particles">
+                <span class="particle particle--spark"></span>
+                <span class="particle particle--spark"></span>
+                <span class="particle particle--dust"></span>
+                <span class="particle particle--dust"></span>
+                <span class="particle particle--bird"></span>
+                <span class="particle particle--bird"></span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__copy">
+            <div class="hero__tagline">
+              <span class="hero__label">PRM / STREET / CONSTRUCTION ZONE</span>
+              <h1>
+                OLDMYN —
+                <span class="hero__accent">SOMETHING MASSIVE</span>
+                IS BEING BUILT.
+              </h1>
+            </div>
+
+            <div class="hero__meta">
+              <div class="hero__timer-block">
+                <span class="hero__coming-tag">COMING SOON • PREMIUM DROP</span>
+                <h2 class="hero__sub">LAUNCH COUNTDOWN</h2>
+                <div class="countdown" aria-label="Countdown to launch">
+                  <div class="countdown__unit">
+                    <span class="countdown__value" id="cd-days">00</span>
+                    <span class="countdown__label">DAYS</span>
+                  </div>
+                  <div class="countdown__unit">
+                    <span class="countdown__value" id="cd-hours">00</span>
+                    <span class="countdown__label">HRS</span>
+                  </div>
+                  <div class="countdown__unit">
+                    <span class="countdown__value" id="cd-mins">00</span>
+                    <span class="countdown__label">MINS</span>
+                  </div>
+                  <div class="countdown__unit">
+                    <span class="countdown__value" id="cd-secs">00</span>
+                    <span class="countdown__label">SECS</span>
+                  </div>
+                </div>
+                <div class="hero__timer-strip">
+                  <span>ZONE ARMED</span>
+                  <span>DRONES ONLINE</span>
+                  <span>FABRICS INBOUND</span>
+                </div>
+              </div>
+
+              <div class="hero__side-panel">
+                <div class="blueprint">
+                  <div class="blueprint__header">
+                    <span class="blueprint__title">HOODIE / TEE BLUEPRINTS</span>
+                    <span class="blueprint__code">OM‑SITE‑V1.0</span>
+                  </div>
+                  <div class="blueprint__body">
+                    <div class="blueprint__diagram blueprint__diagram--tee">
+                      <span class="bp-line bp-line--v"></span>
+                      <span class="bp-line bp-line--h"></span>
+                      <span class="bp-note bp-note--1">OVERSIZED DRAPE</span>
+                      <span class="bp-note bp-note--2">HEAVYWEIGHT COTTON</span>
+                    </div>
+                    <div class="blueprint__diagram blueprint__diagram--hoodie">
+                      <span class="bp-hood"></span>
+                      <span class="bp-pocket"></span>
+                      <span class="bp-note bp-note--3">INDUSTRIAL STITCH</span>
+                    </div>
+                  </div>
+                  <div class="blueprint__footer">
+                    <span>SCAN VIA DRONE TO UNLOCK FIRST DROP</span>
+                  </div>
+                </div>
+
+                <div class="hero__cta">
+                  <button class="cta-btn">
+                    <span>GET FIRST ACCESS</span>
+                    <span class="cta-btn__sub">PRIORITY WHITELIST • LIMITED</span>
+                  </button>
+                  <p class="cta-note">
+                    This is not a delay. It’s demolition — rebuilding streetwear from the ground up.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- MICRO SCENE STRIP -->
+        <section class="strip">
+          <div class="strip__tape">
+            <span>OLDMYN UNDER CONSTRUCTION</span>
+            <span>DO NOT CROSS</span>
+            <span>PREMIUM STREETWEAR INBOUND</span>
+            <span>OLDMYN UNDER CONSTRUCTION</span>
+          </div>
+        </section>
+
+        <!-- DETAIL ROW: micro‑moments -->
+        <section class="grid">
+          <article class="card card--scene" data-anim="rise">
+            <div class="card__label">MICRO‑MOMENT 01</div>
+            <h3>Worker caught in the next drop.</h3>
+            <p>
+              One of the crew “tests” an oversized tee mid‑shift. Fabric physics,
+              drape and attitude fully enabled.
+            </p>
+            <div class="card__scene card__scene--worker">
+              <div class="scene-worker">
+                <div class="scene-worker__shadow"></div>
+                <div class="scene-worker__body"></div>
+                <div class="scene-worker__tee"></div>
+                <div class="scene-worker__flash"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--scene" data-anim="rise">
+            <div class="card__label">MICRO‑MOMENT 02</div>
+            <h3>Drone‑level previews.</h3>
+            <p>
+              Drones sweep the site with neon grids, projecting holograms of upcoming
+              hoodies, tees and industrial accessories.
+            </p>
+            <div class="card__scene card__scene--drone">
+              <div class="scene-drone">
+                <div class="scene-drone__grid"></div>
+                <div class="scene-drone__unit"></div>
+                <div class="scene-drone__projection"></div>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card--scene" data-anim="rise">
+            <div class="card__label">MICRO‑MOMENT 03</div>
+            <h3>Blueprints to reality.</h3>
+            <p>
+              Animated schematics morph into physical garments as mechanical arms
+              assemble our oversized silhouettes.
+            </p>
+            <div class="card__scene card__scene--arm">
+              <div class="scene-arm">
+                <div class="scene-arm__base"></div>
+                <div class="scene-arm__joint"></div>
+                <div class="scene-arm__clamp"></div>
+                <div class="scene-arm__panel"></div>
+              </div>
+            </div>
+          </article>
+        </section>
+
+        <!-- ABOUT / CONTACT -->
+        <section class="info" id="about">
+          <div class="info__visual">
+            <div class="info__image">
+              <div class="info__beam info__beam--left"></div>
+              <div class="info__beam info__beam--right"></div>
+              <div class="info__overlay-text">
+                <span class="info__tag">OLDMYN / WEAR YOUR OWN</span>
+                <span class="info__headline">Blueprinted in dust. Finished in detail.</span>
+              </div>
+            </div>
+          </div>
+          <div class="info__content">
+            <div class="info__block">
+              <span class="info__label">ABOUT OLDMYN</span>
+              <p>
+                OldMyn is a premium streetwear label engineering heavyweight, oversized silhouettes
+                with industrial precision. Every tee, hoodie and panel is treated like structural
+                steel — overbuilt, over‑specced and designed to be worn hard.
+              </p>
+            </div>
+            <div class="info__block info__block--contact" id="contact">
+              <span class="info__label">CONTACT & ACCESS</span>
+              <div class="info__rows">
+                <div class="info__row">
+                  <span class="info__row-title">Call</span>
+                  <div class="info__row-body">
+                    <a href="tel:+919099230315">+91 90992 30315</a>
+                    <a href="tel:+917984224248">+91 79842 24248</a>
+                  </div>
+                </div>
+                <div class="info__row">
+                  <span class="info__row-title">Email</span>
+                  <div class="info__row-body">
+                    <a href="mailto:oldmyn1@gmail.com">oldmyn1@gmail.com</a>
+                  </div>
+                </div>
+                <div class="info__row">
+                  <span class="info__row-title">WhatsApp</span>
+                  <div class="info__row-body">
+                    <a href="https://wa.me/919099230315" target="_blank" rel="noreferrer">
+                      +91 90992 30315
+                    </a>
+                  </div>
+                </div>
+                <div class="info__row">
+                  <span class="info__row-title">Instagram</span>
+                  <div class="info__row-body">
+                    <a href="https://www.instagram.com/oldmyn/" target="_blank" rel="noreferrer">
+                      @oldmyn
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="footer">
+          <div class="footer__left">
+            <span class="footer__label">OLDMYN CONSTRUCTION MODE</span>
+            <span class="footer__coords">LAT 51.5074 • LONG 0.1278 • NIGHT SHIFT</span>
+          </div>
+          <div class="footer__center">
+            <span>© <span id="year"></span> OLDMYN STUDIO.</span>
+            <span>ALL FUTURE DROPS ARE CURRENTLY BEING WELDED.</span>
+          </div>
+          <div class="footer__right">
+            <span class="footer__status-dot"></span>
+            <span>LIVE SITE FEED</span>
+          </div>
+        </footer>
+      </main>
+
+      <!-- SIGNUP MODAL -->
+      <div class="signup-modal" id="signup-modal" aria-hidden="true">
+        <div class="signup-modal__backdrop" data-close-modal></div>
+        <div
+          class="signup-modal__panel"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="signup-title"
+        >
+          <button class="signup-modal__close" type="button" data-close-modal aria-label="Close">
+            ✕
+          </button>
+          <span class="signup-modal__label">PRIORITY ACCESS</span>
+          <h2 id="signup-title" class="signup-modal__title">
+            Lock your fit in the construction phase.
+          </h2>
+          <p class="signup-modal__copy">
+            Drop your details and your go‑to tee size. We’ll ping you when the first OldMyn
+            construction batch goes live.
+          </p>
+          <form class="signup-form" id="signup-form">
+            <!-- Formspree helpers -->
+            <input type="hidden" name="_subject" value="OLDMYN Priority Access Signup" />
+            <input type="hidden" name="_format" value="plain" />
+            <div class="signup-form__field">
+              <label for="signup-name">Name</label>
+              <input
+                id="signup-name"
+                name="name"
+                type="text"
+                placeholder="OldMyn Insider"
+                required
+              />
+            </div>
+            <div class="signup-form__field">
+              <label for="signup-email">Email</label>
+              <input
+                id="signup-email"
+                name="email"
+                type="email"
+                placeholder="you@example.com"
+                required
+              />
+            </div>
+            <div class="signup-form__field">
+              <label for="signup-phone">Mobile Number</label>
+              <input
+                id="signup-phone"
+                name="phone"
+                type="tel"
+                inputmode="tel"
+                placeholder="+91 9XXXX XXXXXX"
+                pattern="[0-9+\-\s]{8,15}"
+              />
+            </div>
+            <div class="signup-form__field signup-form__field--sizes">
+              <label for="signup-size">Preferred Tee Size</label>
+              <select id="signup-size" name="size" required>
+                <option value="" disabled selected>Select size</option>
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+              </select>
+            </div>
+            <button type="submit" class="signup-form__submit">
+              <span>Save my spot</span>
+              <span class="signup-form__hint">LIMITED EARLY WAVE</span>
+            </button>
+            <p class="signup-form__status" id="signup-status" aria-live="polite"></p>
+            <p class="signup-form__disclaimer">
+              No spam. Only construction updates, drop details and size‑specific alerts.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
